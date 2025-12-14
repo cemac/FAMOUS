@@ -62,7 +62,7 @@
 #     FILE?? - Input dump filenames
 #
 # End of header -------------------------------------------------------
-#! /bin/ksh
+#!/usr/bin/env ksh
 
 if [ $# -lt 4 ]
   then

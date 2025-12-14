@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 mergecomb.2     
+#!/usr/bin/env ksh                                                         mergecomb.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.589   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.590   
 #                                                                      #   COPYRIGHT.591   

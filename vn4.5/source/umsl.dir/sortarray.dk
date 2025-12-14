@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 sortarray.2     
+#!/usr/bin/env ksh                                                         sortarray.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.872   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.873   
 #                                                                      #   COPYRIGHT.874   

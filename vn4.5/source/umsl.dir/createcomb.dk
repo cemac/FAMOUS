@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 createcomb.2     
+#!/usr/bin/env ksh                                                         createcomb.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.282   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.283   
 #                                                                      #   COPYRIGHT.284   

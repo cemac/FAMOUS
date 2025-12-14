@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 qsconf.2     
+#!/usr/bin/env ksh                                                         qsconf.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.725   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.726   
 #                                                                      #   COPYRIGHT.727   

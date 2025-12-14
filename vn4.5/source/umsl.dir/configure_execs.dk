@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 configure_execs.2     
+#!/usr/bin/env ksh                                                         configure_execs.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.237   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.238   
 #                                                                      #   COPYRIGHT.239   
@@ -113,7 +113,7 @@ for exec in `cat $EXECXREF| $UM_AWK '{print $1}'|\                         PXUTI
 do                                                                         configure_execs.40    
   echo "Generating script $OUTDIR/$exec.script"                            configure_execs.41    
   cat <<EOF >> $OUTDIR/$exec.script                                        configure_execs.42    
-#!/bin/ksh                                                                 configure_execs.43    
+#!/usr/bin/env ksh                                                         configure_execs.43    
 # QSUB -r $exec                                                            configure_execs.44    
 # QSUB -lT 6000                                                            GSH5U404.94    
 # QSUB -lM 60Mw                                                            configure_execs.46    

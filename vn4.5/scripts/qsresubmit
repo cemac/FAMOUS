@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/usr/bin/env ksh
 # ----------------------------- COPYRIGHT ---------------------------- #
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #
 #                                                                      #
@@ -166,7 +166,7 @@ cat > $RESUB_FILE << eof
   JOBDIR=$UMUI_RUNS/umui_runs/$RUNID-$SUBMITID
   export JOBDIR SUBMITID
   # run a shell under nice with the toplevel script as input
-  nice -19 /bin/ksh< /tmp/umuisubmit.$$ $REDIRECTS
+  nice -19 `which ksh`< /tmp/umuisubmit.$$ $REDIRECTS
   rm /tmp/umuisubmit.$$
 EOF
   CC=\$?

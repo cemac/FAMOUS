@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_smow.2     
+#!/usr/bin/env ksh                                                         ancil_smow.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.65    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.66    
 #                                                                      #   COPYRIGHT.67    

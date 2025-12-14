@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 checkobj.2     
-#!/bin/ksh                                                                 checkobj.3     
+#!/usr/bin/env ksh                                                         checkobj.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.200   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.201   
 #                                                                      #   COPYRIGHT.202   

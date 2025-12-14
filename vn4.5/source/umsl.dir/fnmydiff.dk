@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 fnmydiff.2     
+#!/usr/bin/env ksh                                                         fnmydiff.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.363   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.364   
 #                                                                      #   COPYRIGHT.365   

@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 max.2     
+#!/usr/bin/env ksh                                                         max.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.580   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.581   
 #                                                                      #   COPYRIGHT.582   

@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 addcompileopts.2     
+#!/usr/bin/env ksh                                                         addcompileopts.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.1     
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.2     
 #                                                                      #   COPYRIGHT.3     

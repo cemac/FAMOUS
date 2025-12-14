@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_top.2     
+#!/usr/bin/env ksh                                                         ancil_top.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.83    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.84    
 #                                                                      #   COPYRIGHT.85    
@@ -229,7 +229,7 @@ echo "# QSUB -me">>$ANCILSCRIPT                                            ancil
 echo "">>$ANCILSCRIPT                                                      ancil_top.221   
                                                                            ancil_top.222   
 # Other info etc.                                                          ancil_top.223   
-echo "#! /bin/ksh">>$ANCILSCRIPT                                           ancil_top.224   
+echo "#!/usr/bin/env ksh">>$ANCILSCRIPT                                    ancil_top.224   
 echo "set -x">>$ANCILSCRIPT                                                ancil_top.225   
 echo "">>$ANCILSCRIPT                                                      ancil_top.226   
 echo "#Script to create ancillary files">>$ANCILSCRIPT                     ancil_top.227   

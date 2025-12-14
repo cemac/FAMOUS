@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 getcomb.2     
-#!/bin/ksh                                                                 getcomb.3     
+#!/usr/bin/env ksh                                                         getcomb.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.426   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.427   
 #                                                                      #   COPYRIGHT.428   

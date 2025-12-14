@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 initxport.2     
+#!/usr/bin/env ksh                                                         initxport.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.489   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.490   
 #                                                                      #   COPYRIGHT.491   

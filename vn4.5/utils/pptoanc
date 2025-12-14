@@ -101,7 +101,7 @@
 #     PPF1 - used to created link to pp file with fort.??
 #
 # End of header -------------------------------------------------------
-#! /bin/ksh
+#!/usr/bin/env ksh
 
 if [ $# -lt 4 ]
   then

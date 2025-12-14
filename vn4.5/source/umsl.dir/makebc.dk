@@ -62,7 +62,7 @@
 #     FILE?? - Input dump filenames                                        makebc.51    
 #                                                                          makebc.52    
 # End of header -------------------------------------------------------    makebc.53    
-#! /bin/ksh                                                                makebc.54    
+#!/usr/bin/env ksh                                                         makebc.54    
                                                                            makebc.55    
 if [ $# -lt 4 ]                                                            makebc.56    
   then                                                                     makebc.57    

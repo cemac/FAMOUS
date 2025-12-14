@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_sstice.2     
+#!/usr/bin/env ksh                                                         ancil_sstice.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.74    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.75    
 #                                                                      #   COPYRIGHT.76    

@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 checkexec.2     
-#!/bin/ksh                                                                 checkexec.3     
+#!/usr/bin/env ksh                                                         checkexec.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.182   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.183   
 #                                                                      #   COPYRIGHT.184   

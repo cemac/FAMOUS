@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 mkobjxref.2     
+#!/usr/bin/env ksh                                                         mkobjxref.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.625   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.626   
 #                                                                      #   COPYRIGHT.627   

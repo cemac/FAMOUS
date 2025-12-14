@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_mask.2     
+#!/usr/bin/env ksh                                                         ancil_mask.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.29    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.30    
 #                                                                      #   COPYRIGHT.31    

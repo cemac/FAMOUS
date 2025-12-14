@@ -64,7 +64,7 @@
 #     BCOUT   - Output boundary dataset name                               bcreconf.81    
 #                                                                          bcreconf.82    
 # End of header -------------------------------------------------------    bcreconf.83    
-#! /bin/ksh                                                                bcreconf.84    
+#!/usr/bin/env ksh                                                         bcreconf.84    
                                                                            bcreconf.85    
 if [ $# -lt 3 ]                                                            bcreconf.86    
   then                                                                     bcreconf.87    

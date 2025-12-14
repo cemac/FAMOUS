@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 processcdk.2     
-#!/bin/ksh                                                                 processcdk.3     
+#!/usr/bin/env ksh                                                         processcdk.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.688   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.689   
 #                                                                      #   COPYRIGHT.690   

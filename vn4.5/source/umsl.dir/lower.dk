@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 lower.2     
+#!/usr/bin/env ksh                                                         lower.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.508   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.509   
 #                                                                      #   COPYRIGHT.510   

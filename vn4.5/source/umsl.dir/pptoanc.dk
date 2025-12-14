@@ -101,7 +101,7 @@
 #     PPF1 - used to created link to pp file with fort.??                  pptoanc.88    
 #                                                                          pptoanc.89    
 # End of header -------------------------------------------------------    pptoanc.90    
-#! /bin/ksh                                                                pptoanc.91    
+#!/usr/bin/env ksh                                                         pptoanc.91    
                                                                            pptoanc.92    
 if [ $# -lt 4 ]                                                            pptoanc.93    
   then                                                                     pptoanc.94    

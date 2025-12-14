@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 COPYRIGHT.783   
+#!/usr/bin/env ksh                                                         COPYRIGHT.783   
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.784   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.785   
 #                                                                      #   COPYRIGHT.786   
@@ -246,7 +246,7 @@ then                                                                       CJC1U
       assign -f 77 g:sf                                                    CJC1U404.66    
       # Prepare to launch OASIS and the submodels :                        CJC1U404.67    
       [ -s $OASISRUNDIR/qsmain_arg ] && rm $OASISRUNDIR/qsmain_arg         CJC1U404.68    
-      echo "#!/bin/ksh"  >  $OASISRUNDIR/qsmain_arg                        CJC1U404.69    
+      echo "#!/usr/bin/env ksh"  >  $OASISRUNDIR/qsmain_arg                CJC1U404.69    
       echo "cd $TEMP  "  >> $OASISRUNDIR/qsmain_arg                        CJC1U404.70    
       echo "qsmain $1 "  >> $OASISRUNDIR/qsmain_arg                        CJC1U404.71    
       chmod +x $OASISRUNDIR/qsmain_arg                                     CJC1U404.72    

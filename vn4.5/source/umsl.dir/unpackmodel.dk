@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 unpackmodel.2     
+#!/usr/bin/env ksh                                                         unpackmodel.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   unpackmodel.3     
 #          (c) BRITISH CROWN COPYRIGHT 1999, THE MET.OFFICE            #   unpackmodel.4     
 #                                                                      #   unpackmodel.5     

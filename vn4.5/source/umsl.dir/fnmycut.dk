@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 fnmycut.2     
+#!/usr/bin/env ksh                                                         fnmycut.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.354   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.355   
 #                                                                      #   COPYRIGHT.356   

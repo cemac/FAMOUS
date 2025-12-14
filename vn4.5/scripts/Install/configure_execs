@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/usr/bin/env ksh
 # ----------------------------- COPYRIGHT ---------------------------- #
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #
 #                                                                      #
@@ -113,7 +113,7 @@ for exec in `cat $EXECXREF| $UM_AWK '{print $1}'|\
 do
   echo -e "Generating script $OUTDIR/$exec.script"
   cat <<EOF >> $OUTDIR/$exec.script
-#!/bin/ksh
+#!/usr/bin/env ksh
 # QSUB -r $exec
 # QSUB -lT 6000
 # QSUB -lM 60Mw

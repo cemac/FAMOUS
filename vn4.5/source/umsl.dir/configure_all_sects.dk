@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 configure_all_sects.2     
+#!/usr/bin/env ksh                                                         configure_all_sects.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.228   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.229   
 #                                                                      #   COPYRIGHT.230   
@@ -115,7 +115,7 @@ for sect in `cat $OBJXREF|\                                                confi
 do                                                                         configure_all_sects.25    
   echo "Generating script $OUTDIR/$sect.script"                            configure_all_sects.26    
   cat <<EOF >> $OUTDIR/$sect.script                                        configure_all_sects.27    
-#!/bin/ksh                                                                 configure_all_sects.28    
+#!/usr/bin/env ksh                                                         configure_all_sects.28    
 # QSUB -r $sect                                                            configure_all_sects.29    
 # QSUB -lT 6000                                                            GSH5U404.226   
 # QSUB -lM 14Mw                                                            configure_all_sects.31    

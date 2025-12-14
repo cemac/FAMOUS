@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 upper.2     
+#!/usr/bin/env ksh                                                         upper.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.917   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.918   
 #                                                                      #   COPYRIGHT.919   

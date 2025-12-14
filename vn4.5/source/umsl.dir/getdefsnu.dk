@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 getdefsnu.2     
-#!/bin/ksh                                                                 getdefsnu.3     
+#!/usr/bin/env ksh                                                         getdefsnu.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.435   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.436   
 #                                                                      #   COPYRIGHT.437   

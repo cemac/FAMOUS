@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 checkhdefs.2     
+#!/usr/bin/env ksh                                                         checkhdefs.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.191   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.192   
 #                                                                      #   COPYRIGHT.193   

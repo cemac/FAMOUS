@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 mkexecxref.2     
+#!/usr/bin/env ksh                                                         mkexecxref.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.616   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.617   
 #                                                                      #   COPYRIGHT.618   

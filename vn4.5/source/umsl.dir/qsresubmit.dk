@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 COPYRIGHT.832   
+#!/usr/bin/env ksh                                                         COPYRIGHT.832   
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.833   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.834   
 #                                                                      #   COPYRIGHT.835   
@@ -139,7 +139,7 @@ export OPRESTART=3  # indicates run has been automatically resubmitted     GKR3U
 cp $JOBDIR/umuisubmit /tmp/umuisubmit.$$                                   GSM0U403.2     
                                                                            GLW6U400.20    
 cat > $RESUB_FILE << eof                                                   GLW6U400.21    
-  qsub -x -r $JOBNAME -o $OUTFILE -s /bin/ksh /tmp/umuisubmit.$$           GLW6U400.22    
+  qsub -x -r $JOBNAME -o $OUTFILE -s `which ksh` /tmp/umuisubmit.$$        GLW6U400.22    
   CC=\$?                                                                   GKR3U304.29    
                                                                            GKR3U304.30    
   if test \$CC -eq 0                                                       GKR3U304.31    
@@ -148,7 +148,7 @@ cat > $RESUB_FILE << eof                                                   GLW6U
   elif test \$CC -eq 1                                                     GKR3U304.34    
   then                                                                     GKR3U304.35    
     echo "qsresubmit: job not resubmitted due to user error:"              GKR3U304.36    
-    echo qsub -x -r $JOBNAME -o $OUTFILE -s /bin/ksh /tmp/umuisubmit.$$    GLW6U400.23    
+    echo qsub -x -r $JOBNAME -o $OUTFILE -s `which ksh` /tmp/umuisubmit.$$ GLW6U400.23    
   elif test \$CC -eq 2                                                     GKR3U304.39    
   then                                                                     GKR3U304.40    
     echo "qsresubmit: job not resubmitted due to NQS error"                GKR3U304.41    

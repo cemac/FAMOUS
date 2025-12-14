@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/usr/bin/env ksh
 # ----------------------------- COPYRIGHT ---------------------------- #
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #
 #                                                                      #
@@ -115,7 +115,7 @@ for sect in `cat $OBJXREF|\
 do
   echo -e "Generating script $OUTDIR/$sect.script"
   cat <<EOF >> $OUTDIR/$sect.script
-#!/bin/ksh
+#!/usr/bin/env ksh
 # QSUB -r $sect
 # QSUB -lT 6000
 # QSUB -lM 14Mw

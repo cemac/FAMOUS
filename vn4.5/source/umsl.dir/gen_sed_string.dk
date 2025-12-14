@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 gen_sed_string.2     
+#!/usr/bin/env ksh                                                         gen_sed_string.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.399   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.400   
 #                                                                      #   COPYRIGHT.401   

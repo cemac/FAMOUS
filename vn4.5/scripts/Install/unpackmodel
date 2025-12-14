@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/usr/bin/env ksh
 # ----------------------------- COPYRIGHT ---------------------------- #
 #          (c) BRITISH CROWN COPYRIGHT 1999, THE MET.OFFICE            #
 #                                                                      #

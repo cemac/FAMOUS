@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 checkdbdexec.2     
-#!/bin/ksh                                                                 checkdbdexec.3     
+#!/usr/bin/env ksh                                                         checkdbdexec.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.173   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.174   
 #                                                                      #   COPYRIGHT.175   

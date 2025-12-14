@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 getcdks.2     
-#!/bin/ksh                                                                 getcdks.3     
+#!/usr/bin/env ksh                                                         getcdks.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.417   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.418   
 #                                                                      #   COPYRIGHT.419   

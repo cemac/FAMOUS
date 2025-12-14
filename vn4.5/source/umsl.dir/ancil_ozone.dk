@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_ozone.2     
+#!/usr/bin/env ksh                                                         ancil_ozone.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.47    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.48    
 #                                                                      #   COPYRIGHT.49    

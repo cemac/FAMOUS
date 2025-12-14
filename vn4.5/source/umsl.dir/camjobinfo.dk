@@ -7,7 +7,7 @@
 # of it is strictly prohibited. Permission to do so must be obtained   #   COPYRIGHT.143   
 # in writing from the Head of Numerical Modelling at The Met. Office.  #   COPYRIGHT.144   
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.145   
-#!/bin/ksh                                                                 camjobinfo.2     
+#!/usr/bin/env ksh                                                         camjobinfo.2     
 #LL---------------------------------------------------------------------   camjobinfo.3     
 #LL Script: camjobinfo                                                     camjobinfo.4     
 #LL---------------------------------------------------------------------   camjobinfo.5     

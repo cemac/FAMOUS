@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 COPYRIGHT.773   
+#!/usr/bin/env ksh                                                         COPYRIGHT.773   
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.774   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.775   
 #                                                                      #   COPYRIGHT.776   
@@ -696,7 +696,7 @@ then                                                                       GKR3U
   cp $JOBDIR/umuisubmit /tmp/umuisubmit.$$                                 GKR3U405.28    
                                                                            GKR3U405.29    
   cat > $RESUB_FILE << eof                                                 GKR3U405.30    
-    qsub -x -r $JOBNAME -o $OUTFILE -s /bin/ksh /tmp/umuisubmit.$$         GKR3U405.31    
+    qsub -x -r $JOBNAME -o $OUTFILE -s `which ksh` /tmp/umuisubmit.$$      GKR3U405.31    
     CC=\$?                                                                 GKR3U405.32    
                                                                            GKR3U405.33    
     if test \$CC -eq 0                                                     GKR3U405.34    
@@ -705,7 +705,7 @@ then                                                                       GKR3U
     elif test \$CC -eq 1                                                   GKR3U405.37    
     then                                                                   GKR3U405.38    
       echo "qsresubmit: job not resubmitted due to user error:"            GKR3U405.39    
-      echo qsub -x -r $JOBNAME -o $OUTFILE -s /bin/ksh \                   GKR3U405.40    
+      echo qsub -x -r $JOBNAME -o $OUTFILE -s `which ksh` \                GKR3U405.40    
       /tmp/umuisubmit.$$                                                   GKR3U405.41    
     elif test \$CC -eq 2                                                   GKR3U405.42    
     then                                                                   GKR3U405.43    
@@ -885,7 +885,7 @@ then                                                                       qsmai
   # normal executable                                                      GPB0U304.9     
   PAREXE=$LOADMODULE.parexe.$$                                             GPB0U400.1     
   export PAREXE   # ParUM will need to know what the file is called        GPB0U400.2     
-  echo "#!/bin/ksh" > $PAREXE                                              GPB0U304.11    
+  echo "#!/usr/bin/env ksh" > $PAREXE                                      GPB0U304.11    
   echo "set -a" >> $PAREXE                                                 GPB0U304.12    
   echo "cd `pwd`" >> $PAREXE  # sets the correct directory                 GPB0U304.13    
   env | $UM_SED "s/=/=\"/" | $UM_SED "s/$/\"/"  >> $PAREXE                 PXUTILTY.245   
@@ -941,7 +941,7 @@ then                                                                       qsmai
   # normal executable                                                      GPB0U304.26    
   PAREXE=$LOADMODULE.parexe.$$                                             GPB0U400.9     
   export PAREXE   # ParUM will need to know what the file is called        GPB0U400.10    
-  echo "#!/bin/ksh" > $PAREXE                                              GPB0U304.28    
+  echo "#!/usr/bin/env ksh" > $PAREXE                                      GPB0U304.28    
   echo "set -a" >> $PAREXE                                                 GPB0U304.29    
   echo "cd `pwd`" >> $PAREXE  # sets the correct directory                 GPB0U304.30    
   env | $UM_SED "s/=/=\"/" | $UM_SED "s/$/\"/"  >> $PAREXE                 PXUTILTY.246   

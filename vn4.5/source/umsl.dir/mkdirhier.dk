@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 mkdirhier.2     
+#!/usr/bin/env ksh                                                         mkdirhier.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.607   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.608   
 #                                                                      #   COPYRIGHT.609   

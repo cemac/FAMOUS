@@ -108,7 +108,7 @@
 #                 a comdeck or deck.
 #
 # End of header -------------------------------------------------------
-#! /bin/ksh
+#!/usr/bin/env ksh
 
 # Step 0 - Set up environment variables
 

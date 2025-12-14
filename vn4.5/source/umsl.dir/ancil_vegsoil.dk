@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_vegsoil.2     
+#!/usr/bin/env ksh                                                         ancil_vegsoil.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.92    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.93    
 #                                                                      #   COPYRIGHT.94    

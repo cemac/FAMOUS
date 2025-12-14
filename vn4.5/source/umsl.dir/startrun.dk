@@ -257,9 +257,9 @@ OUTPUT_SUBID=d$YEAR_DAY.t$TIME                                             start
 OUTFILE=$OUTPUTDIR/$JOB.$RUNID.$OUTPUT_SUBID.$OUT_CLASS                    GGH2U401.11    
 if test $QUEUENAME = 'unset'                                               startrun.250   
 then                                                                       startrun.251   
-   qsub -x -r $JOB -o $OUTFILE -s /bin/ksh  /tmp/restart.$$                GGH2U401.12    
+   qsub -x -r $JOB -o $OUTFILE -s `which ksh`  /tmp/restart.$$             GGH2U401.12    
 else                                                                       startrun.253   
-   qsub -x -q $QUEUENAME -r $JOB -o $OUTFILE -s /bin/ksh  \                GGH2U401.13    
+   qsub -x -q $QUEUENAME -r $JOB -o $OUTFILE -s `which ksh`  \             GGH2U401.13    
    /tmp/restart.$$                                                         GGH2U401.14    
 fi                                                                         startrun.255   
                                                                            startrun.256   

@@ -1,4 +1,4 @@
-#! /bin/ksh                                                                ancil_orog.2     
+#!/usr/bin/env ksh                                                         ancil_orog.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.38    
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.39    
 #                                                                      #   COPYRIGHT.40    

@@ -64,7 +64,7 @@
 #     BCOUT   - Output boundary dataset name
 #
 # End of header -------------------------------------------------------
-#! /bin/ksh
+#!/usr/bin/env ksh
 
 if [ $# -lt 3 ]
   then

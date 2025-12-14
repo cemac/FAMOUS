@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 findstr.2     
+#!/usr/bin/env ksh                                                         findstr.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.327   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.328   
 #                                                                      #   COPYRIGHT.329   

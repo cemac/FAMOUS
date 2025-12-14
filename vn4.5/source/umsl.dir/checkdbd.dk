@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 checkdbd.2     
-#!/bin/ksh                                                                 checkdbd.3     
+#!/usr/bin/env ksh                                                         checkdbd.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.164   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.165   
 #                                                                      #   COPYRIGHT.166   

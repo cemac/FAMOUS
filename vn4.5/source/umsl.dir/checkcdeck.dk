@@ -1,5 +1,5 @@
 *IF DEF,HP                                                                 checkcdeck.2     
-#!/bin/ksh                                                                 checkcdeck.3     
+#!/usr/bin/env ksh                                                         checkcdeck.3     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.155   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.156   
 #                                                                      #   COPYRIGHT.157   

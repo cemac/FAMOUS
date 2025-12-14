@@ -1,4 +1,4 @@
-#!/bin/ksh
+#!/usr/bin/env ksh
 # ----------------------------- COPYRIGHT ---------------------------- #
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #
 #                                                                      #
@@ -243,7 +243,7 @@ then
       assign -f 77 g:sf
       # Prepare to launch OASIS and the submodels :
       [ -s $OASISRUNDIR/qsmain_arg ] && rm $OASISRUNDIR/qsmain_arg
-      echo -e "#!/bin/ksh"  >  $OASISRUNDIR/qsmain_arg
+      echo -e "#!/usr/bin/env ksh"  >  $OASISRUNDIR/qsmain_arg
       echo -e "cd $TEMP  "  >> $OASISRUNDIR/qsmain_arg
       echo -e "qsmain $1 "  >> $OASISRUNDIR/qsmain_arg
       chmod +x $OASISRUNDIR/qsmain_arg

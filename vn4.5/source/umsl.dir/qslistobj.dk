@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 qslistobj.2     
+#!/usr/bin/env ksh                                                         qslistobj.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.764   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.765   
 #                                                                      #   COPYRIGHT.766   

@@ -108,7 +108,7 @@
 #                 a comdeck or deck.                                       fieldop.77    
 #                                                                          fieldop.78    
 # End of header -------------------------------------------------------    fieldop.79    
-#! /bin/ksh                                                                fieldop.80    
+#!/usr/bin/env ksh                                                         fieldop.80    
                                                                            fieldop.81    
 # Step 0 - Set up environment variables                                    fieldop.82    
                                                                            fieldop.83    

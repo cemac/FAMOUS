@@ -1,4 +1,4 @@
-#!/bin/ksh                                                                 fnlistopt.2     
+#!/usr/bin/env ksh                                                         fnlistopt.2     
 # ----------------------------- COPYRIGHT ---------------------------- #   COPYRIGHT.345   
 #           (c) BRITISH CROWN COPYRIGHT 2000, THE MET.OFFICE           #   COPYRIGHT.346   
 #                                                                      #   COPYRIGHT.347   
