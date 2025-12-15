@@ -24,12 +24,6 @@ UM_AWK=awk
 UM_SED=sed
 UM_GREP=grep
 
-#MPI
-if [[ $MPI_MODULES != "Y" ]]
-then
-  MPI_DIR=${MPI_DIR:-${UMDIR}/mpich3.2}
-  PATH=$MPI_DIR/bin:$PATH
-fi
 # Paths
 PATH=$UMDIR/bin:$PATH:.:$UMDIR/vn4.5/utils
 FPATH=$UMDIR/vn4.5/scripts/functions:$FPATH
