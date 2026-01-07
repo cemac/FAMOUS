@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# This script name:
+ME="$(basename ${0})"
+# Make sure stacksize is set to unlimited:
+ulimit -s unlimited
+
+# Check number of argmuents:
+if [ "${#}" != "1" ]; then
+  echo "Usage: ${ME} runid"
+  exit 1
+fi
+
+# Experiment ID is first argument:
+EXP_ID="${1}"
+
+# Check UMUI_RUNS directoryexists:
+cd ${UMUI_RUNS}
+if [ "${?}" != "0" ] ; then
+  echo "Unable to access ${UMUI_RUNS}. Exiting"
+  exit 1
+fi
+
+# Obtain unique id by using date and time:
+SUBMIT_ID="$(date +%j%H%M%S)"
+# Directory on this machine which holds processed files:
+PROCESSED_DIR="${UMUI_RUNS}/umui_jobs/${EXP_ID}"
+# Directory on host to which files will be copied:
+RUN_DIR="${UMUI_RUNS}/umui_runs/${EXP_ID}-${SUBMIT_ID}"
+# File name of executable script
+RUN_FILE='SUBMIT'
+
+# Make PROCESSED_DIR:
+mkdir -p ${PROCESSED_DIR}
+if [ ! -d ${PROCESSED_DIR} ] ; then
+  echo "Job library directory ${PROCESSED_DIR} could not be found"
+  exit 1
+fi
+
+# This checks whether or not the job is from UMUI 4.1 or later
+# If it is a different submission method is required.
+TEST_SUBMITID="$(grep ':::submitid:::' ${PROCESSED_DIR}/${RUN_FILE})"
+if [ -z "${TEST_SUBMITID}" ]; then
+  # Command which will be executed on host machine
+  # UMUI Versions < 4.1:
+  RUN_CMD="SUBMITID=${SUBMIT_ID} ; export SUBMITID ; . ${RUN_DIR}/${RUN_FILE}"
+else
+  # UMUI Versions 4.1 and above:
+  RUN_CMD="${RUN_DIR}/${RUN_FILE}"
+fi
+
+# Create umui_runs directory:
+mkdir -p ${UMUI_RUNS}/umui_runs
+if [ "${?}" =  "0" ] ; then
+  # Initialise $RUN_FILE:
+  cat ${PROCESSED_DIR}/${RUN_FILE} |\
+    sed "s/:::submitid:::/${SUBMIT_ID}/g" > \
+    /tmp/${RUN_FILE}.${EXP_ID}.${SUBMIT_ID}
+  # Copy files:
+  cp -r ${PROCESSED_DIR} ${RUN_DIR}
+  cp /tmp/${RUN_FILE}.${EXP_ID}.${SUBMIT_ID} ${RUN_DIR}/${RUN_FILE}
+  \rm -f /tmp/${RUN_FILE}.${EXP_ID}.${SUBMIT_ID}
+  # Adjust path to ksh:
+  sed -i 's|!/bin/ksh|!/usr/bin/env ksh|g' ${RUN_DIR}/*
+  sed -i 's| /bin/ksh| /usr/bin/env ksh|g' ${RUN_DIR}/*
+  # Adjust compile time for slurm format:
+  COMP_TIME=$(grep -Eo '^COMPILE_TIME_STEPS2_AND_0=[[:digit:]]+' \
+                ${RUN_DIR}/SUBMIT | \
+               awk -F '=' '{print $2}')
+  if [ -z "${COMP_TIME}" ] ; then
+    COMP_TIME=0
+  fi
+  COMP_H=$(printf '%02d' $((${COMP_TIME}/60/60)))
+  COMP_M=$(printf '%02d' $((${COMP_TIME}/60%60)))
+  sed -i "s|^\(COMPILE_TIME_STEPS2_AND_0=\).*$|\1${COMP_H}:${COMP_M}:00|g" \
+    ${RUN_DIR}/SUBMIT
+  # Adjust compile time checking:
+  sed -i \
+    's|test $COMPILE_TIME_STEPS2_AND_0 -eq -1|[ "$COMPILE_TIME_STEPS2_AND_0" = "-1" ]|g' \
+    ${RUN_DIR}/SUBMIT
+  # Set RUN_FILE permissions:
+  chmod 755 ${RUN_DIR}/${RUN_FILE}
+  # Submit:
+  ${RUN_CMD}
+fi
