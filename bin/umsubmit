@@ -67,8 +67,9 @@ if [ "${?}" =  "0" ] ; then
   COMP_TIME=$(grep -Eo '^COMPILE_TIME_STEPS2_AND_0=[[:digit:]]+' \
                 ${RUN_DIR}/SUBMIT | \
                awk -F '=' '{print $2}')
+  # Default to one hour:
   if [ -z "${COMP_TIME}" ] ; then
-    COMP_TIME=0
+    COMP_TIME=3600
   fi
   COMP_H=$(printf '%02d' $((${COMP_TIME}/60/60)))
   COMP_M=$(printf '%02d' $((${COMP_TIME}/60%60)))
